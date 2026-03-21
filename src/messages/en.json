@@ -1,5 +1,4 @@
 {
-    
     "common": {
         "loading": "Loading...",
         "error": "Error",
@@ -12,24 +11,185 @@
         "delete": "Delete",
         "back": "Back",
         "next": "Next",
-        "previous": "Previous"
+        "previous": "Previous",
+        "join_now": "JOIN NOW",
+        "select_plan": "SELECT YOUR PLAN",
+        "shop_now": "SHOP NOW"
     },
     "navigation": {
-        "home": "Home",
-        "projects": "Projects",
-        "units": "Units",
-        "developers": "Developers",
-        "contact": "Contact",
-        "sell_property": "Sell Property"
+        "home": "HOME",
+        "transformations": "TRANSFORMATIONS",
+        "coach": "COACH",
+        "plans": "PLANS",
+        "ready_programs": "PROGRAMS",
+        "faq": "FAQ"
     },
     "home": {
-        "title": "Done",
-        "subtitle": "Find Your Perfect Property",
-        "search_placeholder": "Search for properties, projects, or locations...",
-        "featured_projects": "Featured Projects",
-        "featured_zones": "Featured Zones",
-        "featured_developers": "Featured Developers",
-        "ai_assistant": "AI Assistant",
-        "ai_description": "Get personalized recommendations and guidance"
+        "hero": {
+            "title": "ONCE YOU ENTER\nTHIS SITE,",
+            "subtitle": "You have begun the journey to a better physique and health."
+        },
+        "transformations": {
+            "label": "OUR RESULTS",
+            "title": "Real Results. Proven Success.",
+            "heading": "Transformations"
+        },
+        "features": {
+            "label": "OUR UNPARALLELED VALUE",
+            "title": "Program Features",
+            "training": {
+                "title": "Training System",
+                "description": "Customized training volume based on your training age, considering any injuries and available gym equipment. Every exercise is explained in videos to prevent injuries and achieve the best results as quickly as possible."
+            },
+            "diet": {
+                "title": "Diet Plan",
+                "description": "A specially designed diet suited to your lifestyle and favorite foods. It is built around your goal and budget, extremely flexible, and varied, making it easy to stick with and achieve the best results."
+            },
+            "followup": {
+                "title": "Follow-Up",
+                "description": "Follow-up with the coach himself, without a team. We follow up together daily via Telegram and WhatsApp, plus a weekly Zoom call to track developments."
+            }
+        },
+        "pricing": {
+            "label": "CHOOSE YOUR PATH",
+            "title": "Subscription Path",
+            "starter": {
+                "title": "Starter"
+            },
+            "most_popular": {
+                "title": "Most Popular"
+            },
+            "elite": {
+                "title": "Elite"
+            },
+            "billing": {
+                "monthly": "/mo",
+                "quarterly": "/3mo",
+                "half_yearly": "/6mo",
+                "egp": " EGP"
+            },
+            "durations": {
+                "1_month": "1 Month",
+                "2_months": "2 Months",
+                "3_months": "3 Months",
+                "6_months": "6 Months",
+                "yearly": "1 Year",
+                "one_time": "One-Time"
+            },
+            "training": {
+                "title": "Training Package",
+                "features": {
+                    "f1": "Customized diet built around your preferences",
+                    "f2": "Customized training plan with complete video explanations",
+                    "f3": "Daily 1-on-1 follow-up with Capt. Ahmed via Telegram",
+                    "f4": "Tracking sheet for your weight progression",
+                    "f5": "Continuous motivation and results tracking",
+                    "f6": "Program renewal every 10-15 days based on progress"
+                }
+            },
+            "medical": {
+                "title": "Medical Follow-up",
+                "features": {
+                    "f1": "Customized diet built around your preferences",
+                    "f2": "Customized training plan with complete video explanations",
+                    "f3": "Supervised by a medical team: physiotherapist & orthopedic doctor",
+                    "f4": "Daily 1-on-1 follow-up with Capt. Ahmed via Telegram",
+                    "f5": "Tracking sheet for your weight progression",
+                    "f6": "Continuous motivation and results tracking",
+                    "f7": "Program renewal every 10-15 days based on progress"
+                }
+            },
+            "book": {
+                "title": "Overdose Bulking Book",
+                "features": {
+                    "f1": "50 high-calorie recipes",
+                    "f2": "Easy and diverse recipes (Breakfast, Lunch, Dinner, Snacks)",
+                    "f3": "Complete and simple preparation methods",
+                    "f4": "Nutritional values for every recipe (Calories + Macros)",
+                    "f5": "Suitable for athletes and non-athletes for weight gain"
+                }
+            },
+            "payment_modal": {
+                "title": "Payment Options",
+                "subtitle": "Choose your preferred way to pay and complete your subscription",
+                "instapay": "InstaPay",
+                "e_and": "e& (Etisalat Cash)",
+                "copy": "Copy",
+                "copied": "Copied!",
+                "pay_link": "Pay via InstaPay Link"
+            }
+        },
+        "nutrition": {
+            "label": "EXPERT INSIGHT",
+            "title": "Nutrition Is Key",
+            "plan1": {
+                "title": "Plan 1",
+                "description": "Sample meal plan"
+            },
+            "plan2": {
+                "title": "Plan 2",
+                "description": "Sausage meal plan"
+            },
+            "plan3": {
+                "title": "Plan 3",
+                "description": "Tasteful meal plan"
+            }
+        },
+        "coach": {
+            "title": "About Your <red>COACH</red>",
+            "name": "John Doe",
+            "bio": "I won't just call myself your coach, consider me your brother. My goal is to help you reach the physique you dream of with love and ease, and to save you valuable time. Trust me, with or without a coach, you'll eventually get there—the only question is how long it will take. Know that I'm here to ensure you stay on the fastest, right track."
+        },
+        "reviews": {
+            "label": "CLIENT FEEDBACK",
+            "title": "What Our Clients Say"
+        },
+        "ready_programs": {
+            "label": "READY-MADE PROGRAMS",
+            "title": "Choose Your Program",
+            "plans": {
+                "arnold_5_days": "Arnold Split (5 Days)",
+                "ppl_6_days": "Push Pull Legs (6 Days)",
+                "upper_lower_4_days": "Upper Lower (4 Days)",
+                "full_body_3_days": "Full Body (3 Days)",
+                "arnold_upper_lower_5_days": "Arnold x Upper Lower (5 Days)"
+            },
+            "features": {
+                "f1": "Detailed training system integrating science and old-school experience",
+                "f2": "Includes exercises, sets, rep ranges, and video explanations",
+                "f3": "Sheet for recording and tracking your weights",
+                "f4": "Suitable according to the number of days you have available per week"
+            }
+        },
+        "faq": {
+            "title": "GOT QUESTIONS?",
+            "q1": {
+                "question": "What services do you provide?",
+                "answer": "I provide 100% customized training and nutrition plans tailored to your goals and daily routine (bulking - weight loss - rehabilitation) with 24-hour continuous follow-up."
+            },
+            "q2": {
+                "question": "What is included in the medical follow-up package?",
+                "answer": "You will be in direct contact with specialized doctors who create your rehabilitation program, in case you are returning from a major injury like an ACL tear or orthopedic surgeries."
+            },
+            "q3": {
+                "question": "What should I do after payment?",
+                "answer": "Send a screenshot to our WhatsApp number. Your subscription will be confirmed within 24 hours, and then I will ask you for all the details needed to accurately design your programs."
+            },
+            "q4": {
+                "question": "When will I receive my program?",
+                "answer": "Your customized plan will be delivered within 1 to 3 days, and ready-made programs are delivered on the same day."
+            }
+        },
+        "cta": {
+            "title": "READY TO TRANSFORM YOUR PHYSIQUE?",
+            "subtitle": "Join thousands of others who have forged their ultimate bodies and transformed their health.",
+            "button": "START YOUR JOURNEY"
+        },
+        "footer": {
+            "description": "Elite online coaching designed to build muscle, shred fat, and transform your body permanently.",
+            "quick_links": "Quick Links",
+            "follow_us": "Follow Us",
+            "copyright": "© {year} Owais Coaching. All rights reserved."
+        }
     }
 }

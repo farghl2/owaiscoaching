@@ -3,25 +3,25 @@ import axiosInstance from './axiosInstance';
 // Generic API methods
 export const api = {
   // GET request
-  get: async <T>(url: string, params?: any): Promise<T> => {
+  get: async <T>(url: string, params?: Record<string, unknown>): Promise<T> => {
     const response = await axiosInstance.get(url, { params });
     return response.data;
   },
 
   // POST request
-  post: async <T>(url: string, data?: any): Promise<T> => {
+  post: async <T>(url: string, data?: unknown): Promise<T> => {
     const response = await axiosInstance.post(url, data);
     return response.data;
   },
 
   // PUT request
-  put: async <T>(url: string, data?: any): Promise<T> => {
+  put: async <T>(url: string, data?: unknown): Promise<T> => {
     const response = await axiosInstance.put(url, data);
     return response.data;
   },
 
   // PATCH request
-  patch: async <T>(url: string, data?: any): Promise<T> => {
+  patch: async <T>(url: string, data?: unknown): Promise<T> => {
     const response = await axiosInstance.patch(url, data);
     return response.data;
   },

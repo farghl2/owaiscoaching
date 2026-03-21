@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Oswald } from "next/font/google";
 
 
 import "../globals.css";
@@ -9,13 +9,13 @@ import ReactQueryProvider from '../../lib/providers/ReactQueryProvider';
 import { Directions, Languages } from '@/src/shared/constans/enums';
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
 });
 
@@ -30,8 +30,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={locale === Languages.ARABIC ? Directions.RTL : Directions.LTR}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang={locale} className="dark scroll-smooth" dir={locale === Languages.ARABIC ? Directions.RTL : Directions.LTR}>
+      <body className={`${inter.variable} ${oswald.variable} antialiased bg-background text-foreground`}>
         <NextIntlClientProvider messages={messages}>
           <ReactQueryProvider>
             <NuqsAdapter>
