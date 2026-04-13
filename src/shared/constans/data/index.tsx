@@ -129,7 +129,7 @@ export const TRANSFORMATIONS_MOCK: Transformation[] = [
     metric: 'kg',
     durationWeeks: 4,
   },
-  
+
 
 ];
 
@@ -166,6 +166,7 @@ export type PlanFeatureKey = string;
 export type PricingOption = {
   durationKey: string;
   price: string;
+  originalPrice?: string;
   billingKey: string;
 };
 
@@ -183,9 +184,9 @@ export const PLANS_MOCK: Plan[] = [
     tierKey: 'home.pricing.training.title',
     isPopular: true,
     pricingOptions: [
-      { durationKey: 'home.pricing.durations.3_months', price: '750', billingKey: 'home.pricing.billing.egp' },
-      { durationKey: 'home.pricing.durations.6_months', price: '1250', billingKey: 'home.pricing.billing.egp' },
-      { durationKey: 'home.pricing.durations.yearly', price: '2000', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.pricing.durations.3_months', price: '750', originalPrice: '1500', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.pricing.durations.6_months', price: '1250', originalPrice: '2700', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.pricing.durations.yearly', price: '2000', originalPrice: '4500', billingKey: 'home.pricing.billing.egp' },
     ],
     featureKeys: [
       'home.pricing.training.features.f1',
@@ -200,7 +201,7 @@ export const PLANS_MOCK: Plan[] = [
     id: 'medical',
     tierKey: 'home.pricing.medical.title',
     pricingOptions: [
-      { durationKey: 'home.pricing.durations.2_months', price: '2000', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.pricing.durations.2_months', price: '2000', originalPrice: '3000', billingKey: 'home.pricing.billing.egp' },
     ],
     featureKeys: [
       'home.pricing.medical.features.f1',
@@ -212,28 +213,19 @@ export const PLANS_MOCK: Plan[] = [
       'home.pricing.medical.features.f7',
     ],
   },
-  {
-    id: 'book',
-    tierKey: 'home.pricing.book.title',
-    pricingOptions: [
-      { durationKey: 'home.pricing.durations.one_time', price: '199', billingKey: 'home.pricing.billing.egp' },
-    ],
-    featureKeys: [
-      'home.pricing.book.features.f1',
-      'home.pricing.book.features.f2',
-      'home.pricing.book.features.f3',
-      'home.pricing.book.features.f4',
-      'home.pricing.book.features.f5',
-    ],
-  },
 ];
 
 export const READY_PROGRAMS_MOCK: Plan[] = [
   {
-    id: 'arnold_5_days',
-    tierKey: 'home.ready_programs.plans.arnold_5_days',
+    id: 'all_programs',
+    tierKey: 'home.ready_programs.title',
+    isPopular: false,
     pricingOptions: [
-      { durationKey: 'home.pricing.durations.one_time', price: '249', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.ready_programs.plans.arnold_5_days', price: '200', originalPrice: '350', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.ready_programs.plans.upper_lower_4_days', price: '200', originalPrice: '350', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.ready_programs.plans.ppl_6_days', price: '200', originalPrice: '350', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.ready_programs.plans.full_body_3_days', price: '200', originalPrice: '350', billingKey: 'home.pricing.billing.egp' },
+      { durationKey: 'home.ready_programs.plans.arnold_upper_lower_5_days', price: '200', originalPrice: '350', billingKey: 'home.pricing.billing.egp' },
     ],
     featureKeys: [
       'home.ready_programs.features.f1',
@@ -241,59 +233,7 @@ export const READY_PROGRAMS_MOCK: Plan[] = [
       'home.ready_programs.features.f3',
       'home.ready_programs.features.f4',
     ],
-  },
-  {
-    id: 'ppl_6_days',
-    tierKey: 'home.ready_programs.plans.ppl_6_days',
-    pricingOptions: [
-      { durationKey: 'home.pricing.durations.one_time', price: '249', billingKey: 'home.pricing.billing.egp' },
-    ],
-    featureKeys: [
-      'home.ready_programs.features.f1',
-      'home.ready_programs.features.f2',
-      'home.ready_programs.features.f3',
-      'home.ready_programs.features.f4',
-    ],
-  },
-  {
-    id: 'upper_lower_4_days',
-    tierKey: 'home.ready_programs.plans.upper_lower_4_days',
-    pricingOptions: [
-      { durationKey: 'home.pricing.durations.one_time', price: '249', billingKey: 'home.pricing.billing.egp' },
-    ],
-    featureKeys: [
-      'home.ready_programs.features.f1',
-      'home.ready_programs.features.f2',
-      'home.ready_programs.features.f3',
-      'home.ready_programs.features.f4',
-    ],
-  },
-  {
-    id: 'full_body_3_days',
-    tierKey: 'home.ready_programs.plans.full_body_3_days',
-    pricingOptions: [
-      { durationKey: 'home.pricing.durations.one_time', price: '249', billingKey: 'home.pricing.billing.egp' },
-    ],
-    featureKeys: [
-      'home.ready_programs.features.f1',
-      'home.ready_programs.features.f2',
-      'home.ready_programs.features.f3',
-      'home.ready_programs.features.f4',
-    ],
-  },
-  {
-    id: 'arnold_upper_lower_5_days',
-    tierKey: 'home.ready_programs.plans.arnold_upper_lower_5_days',
-    pricingOptions: [
-      { durationKey: 'home.pricing.durations.one_time', price: '249', billingKey: 'home.pricing.billing.egp' },
-    ],
-    featureKeys: [
-      'home.ready_programs.features.f1',
-      'home.ready_programs.features.f2',
-      'home.ready_programs.features.f3',
-      'home.ready_programs.features.f4',
-    ],
-  },
+  }
 ];
 
 export type NutritionPlan = {
@@ -332,7 +272,7 @@ export const COACH_PROFILE_MOCK: CoachProfile = {
   nameKey: 'home.coach.name',
   titleKey: 'home.coach.title',
   bioKey: 'home.coach.bio',
-  photo: '/about.jpg',
+  photo: '/about-couach.jpg',
   signature: '',
 };
 
@@ -375,7 +315,7 @@ export const REVIEWS_MOCK: Review[] = [
   { id: 'r2', image: '/rev/c2.jpg' },
   { id: 'r3', image: '/rev/c3.jpg' },
   { id: 'r4', image: '/rev/c4.jpg' },
-  
+
 ];
 
 export type FooterLink = {

@@ -11,11 +11,13 @@ import { FaqSection } from '@/src/features/home/components/FaqSection';
 import { BottomCtaSection } from '@/src/features/home/components/BottomCtaSection';
 import { Footer } from '@/src/features/home/components/Footer';
 import { ReviewsSection } from '@/src/features/home/components/ReviewsSection';
+import { WhatsAppButton } from '@/src/features/home/components/WhatsAppButton';
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-black text-white">
       <Navbar />
+      <WhatsAppButton />
       <div className="overflow-x-hidden w-full">
         <HeroSection />
         <section className="bg-neutral-950">

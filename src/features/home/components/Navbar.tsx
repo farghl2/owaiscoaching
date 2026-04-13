@@ -25,9 +25,9 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-black/80 backdrop-blur-md">
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 lg:px-8">
-        
+
         {/* LOGO */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
@@ -44,8 +44,8 @@ export function Navbar() {
         <ul className="hidden md:flex items-center gap-8">
           {NAV_LINKS_MOCK.map((link) => (
             <li key={link.id}>
-              <a 
-                href={link.href} 
+              <a
+                href={link.href}
                 className="text-sm font-medium text-gray-400 uppercase tracking-wider transition-colors hover:text-white"
               >
                 {t(link.labelKey)}
@@ -56,9 +56,9 @@ export function Navbar() {
 
         {/* ACTIONS */}
         <div className="hidden md:flex items-center gap-4">
-          <Button 
-            variant="ghost" 
-            size="icon" 
+          <Button
+            variant="ghost"
+            size="icon"
             onClick={toggleLanguage}
             className="text-white hover:bg-white/10"
             title={locale === 'ar' ? "Switch to English" : "التبديل للعربية"}
@@ -84,16 +84,16 @@ export function Navbar() {
 
         {/* MOBILE NAV */}
         <div className="md:hidden flex items-center gap-2">
-          
-          <Button 
-            variant="ghost" 
-            size="icon" 
+
+          <Button
+            variant="ghost"
+            size="icon"
             onClick={toggleLanguage}
             className="text-white hover:bg-white/10"
           >
             <Globe className="h-5 w-5" />
             <span className="absolute -bottom-3 text-[9px] font-bold uppercase text-gray-500">
-               {locale === 'ar' ? 'EN' : 'عربي'}
+              {locale === 'ar' ? 'EN' : 'عربي'}
             </span>
           </Button>
 
@@ -109,8 +109,8 @@ export function Navbar() {
                 <ul className="flex flex-col gap-6">
                   {NAV_LINKS_MOCK.map((link) => (
                     <li key={link.id}>
-                      <a 
-                        href={link.href} 
+                      <a
+                        href={link.href}
                         onClick={() => setIsOpen(false)}
                         className="text-xl font-heading font-medium text-gray-300 uppercase tracking-widest hover:text-white"
                       >

@@ -53,6 +53,8 @@
         "pricing": {
             "label": "CHOOSE YOUR PATH",
             "title": "Subscription Path",
+            "choose_period": "Choose your subscription period 👇",
+            "choose_split": "Choose your workout split 👇",
             "starter": {
                 "title": "Starter"
             },
@@ -116,7 +118,9 @@
                 "e_and": "e& (Etisalat Cash)",
                 "copy": "Copy",
                 "copied": "Copied!",
-                "pay_link": "Pay via InstaPay Link"
+                "pay_link": "Pay via InstaPay Link",
+                "after_pay_title": "After Payment!",
+                "after_pay_text": "Send a screenshot of the transaction on WhatsApp and your subscription will be confirmed instantly 💪"
             }
         },
         "nutrition": {
